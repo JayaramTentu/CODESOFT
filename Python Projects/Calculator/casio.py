@@ -31,17 +31,14 @@ root.geometry("300x500")
 text_result=tk.Text(root , height=5, width=16,font=("Arial",24))
 text_result.grid(columnspan=5)
 
-btn_Clear=tk.Button(root,text="C",command=clear,width=5,font=("Arial",14))
-btn_Clear.grid(row=2,column=0)
+btn_Clear=tk.Button(root,text="C",command=clear,width=11,font=("Arial",14))
+btn_Clear.grid(row=2,column=0,columnspan=2)
 
-btn_Delete=tk.Button(root,text="√",command=lambda:add('√'),width=5,font=("Arial",14))
-btn_Delete.grid(row=2,column=1)
+btn_divide=tk.Button(root,text="%",command=lambda:add('%'),width=5,font=("Arial",14))
+btn_divide.grid(row=2,column=2)
 
-btn_Modulo=tk.Button(root,text="%",command=lambda:add('%'),width=5,font=("Arial",14))
-btn_Modulo.grid(row=2,column=2)
-
-btn_Divide=tk.Button(root,text="/",command=lambda:add('/'),width=5,font=("Arial",14))
-btn_Divide.grid(row=2,column=3)
+btn_divide=tk.Button(root,text="/",command=lambda:add('/'),width=5,font=("Arial",14))
+btn_divide.grid(row=2,column=3)
 
 
 
